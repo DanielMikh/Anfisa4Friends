@@ -2,7 +2,7 @@ import requests
 
 
 def what_weather(city):
-    url = f'http://wttr.in/{city}'
+    url = f'http://wttr.in/{city}?m'
     weather_parameters = {
         'format': 2,
         'M': ''
