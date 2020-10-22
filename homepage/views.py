@@ -15,7 +15,7 @@ def index(request):
 
     for friend in friends_db:
         friends += (f'<input type="radio" name="friend"'
-                   f' required value="{friend}">{friend}<br>')
+                   f' required value="{friend}">{friend} - из г. {friends_db[friend]}<br>')
 
     for i in range(len(icecream_db)):
         ice_form = (f'<input type="radio" name="icecream" required'
